@@ -1,0 +1,20 @@
+export default [
+    {
+        firstName:'Peter',
+        lastName:'Parker',
+        phone:'714-357-5354',
+        email:'aypeterparker@gmail.com'
+    },
+    {
+        firstName:'Clark',
+        lastName:'Kent',
+        phone:'785-513-5554',
+        email:'cl4rkK3nT@gmail.com'
+    },
+    {
+        firstName:'Barry',
+        lastName:'Allen',
+        phone:'752-324-5712',
+        email:'B4llen@gmail.com'
+    }
+];
