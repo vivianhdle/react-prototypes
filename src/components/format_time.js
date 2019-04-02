@@ -22,10 +22,18 @@ class FormatTime extends Component{
             ms:Math.floor(elapsed%100)
         }
     }
+    leadingZero = number => {
+        if (number<10){
+            const newNumber = '0'+number;
+            return newNumber;
+        } else {
+            return number;
+        }
+    }
     render(){
         const {hour,min,sec,ms} = this.convertMillisecondsToTime();
         return(
-            <div style={this.styleObj} >{hour}:{min}:{sec}:{ms}</div>
+            <div style={this.styleObj}>{this.leadingZero(hour)}:{this.leadingZero(min)}:{this.leadingZero(sec)}:{this.leadingZero(ms)}</div>
         )
     }
 }
