@@ -8,7 +8,6 @@ class App extends Component{
         contacts:contactData
     }
     addContact=contact=>{
-        console.log('App: add contact', contact);
         this.setState({
             contacts:[contact,...this.state.contacts]
         })

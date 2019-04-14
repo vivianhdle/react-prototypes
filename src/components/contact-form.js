@@ -54,8 +54,8 @@ class ContactForm extends Component{
                 <Field name='email' label='Email'
                 type='email' value={email} onChange={this.handleInputChange}
                 />
-                <button>Add Contact</button>
-                <button type="button" onClick={this.reset}>Clear Form</button>
+                <button className="btn btn-outline-success">Add Contact</button>
+                <button type="button" className="btn btn-outline-danger" onClick={this.reset}>Clear Form</button>
             </form>
         )
     }
